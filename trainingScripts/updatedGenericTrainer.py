@@ -249,7 +249,7 @@ config = {
 }
 
 # Load dataset from CSV
-dataset = load_dataset('csv', data_files={'train': 'trainingScripts/total_new_data.csv', 'test': 'trainingScripts/total_new_data.csv'})
+dataset = load_dataset('csv', data_files={'train': 'total_new_data.csv', 'test': 'total_new_data.csv'})
 
 # Assuming the dataset has "English" and "Luganda" columns
 dataset = create_dataset([dataset], ["total_new_data"], config)
